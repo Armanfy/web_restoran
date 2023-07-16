@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Restoran</title>
+  </head>
+  <body>
+    <center>
+      <h2>Silahkan pilih Menu Makanan</h2>
+      <a href="pelanggan.php">Melihat Data pelanggan</a>
+      <br />
+      <br />
+      <form method="post" action="simpan.php">
+      <table>
+        <tr>
+          <td>nama</td>
+          <td><input type="text" name="nama" /></td>
+        </tr>
+        <tr>
+          <td>Menu masakan</td>
+          <td>
+            <select name="menu">
+              <option value="nasigoreng">Nasi goreng</option>
+              <option value="miegoreng">Mie goreng</option>
+              <option value="ayamgoreng">Ayam goreng</option>
+              <option value="gadogado">Gado-gado</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Telp</td>
+          <td><input type="text" name="telp" /></td>
+        </tr>
+        <tr>
+          <td>Alamat</td>
+          <td><textarea name="alamat" cols="22" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td>Pilih</td>
+          <td>
+            <input type="submit" value="simpan data" />
+            <input type="reset" value="batal data" />
+          </td>
+        </tr>
+      </table>
+    </center>
+    <center><a href="index.html">Home</a></center>
+  </body>
+</html>
